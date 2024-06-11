@@ -1,0 +1,46 @@
+<html>
+<head>
+			<title> Color App by Mohan </title>
+			<style>
+						* {font-size:50px;font-family:Ink Free}
+						h1 { background-color:Black; color:white; width:900px; border-radius:10px;}
+			</style>
+</head>
+<body>
+<center>
+			<h1> Color App </h1>
+			<form onsubmit="color()">
+			<input type="submit" value="Red"/>
+			<input type="submit" value="Green"/>
+			<input type="submit" value="Blue"/>
+			<input type="submit" value="Aqua"/>
+			<input type="submit" value="Orchid"/>
+			<input type="submit" value="Cyan"/>
+			</form>
+
+			<script>
+						function color()
+						{
+						event.preventDefault();
+						let ele = document.activeElement.value;
+						if (ele == "Red")
+									document.body.style.backgroundColor="red";
+						else if (ele == "Green")
+									document.body.style.backgroundColor="green";
+						else if (ele == "Blue")
+									document.body.style.backgroundColor="blue";
+						else if (ele == "Aqua")
+									document.body.style.backgroundColor="aqua";
+						else if (ele == "Orchid")
+									document.body.style.backgroundColor="orchid";
+						else if (ele == "Cyan")
+									document.body.style.backgroundColor="cyan";
+						}
+			</script>
+</center>
+</body>
+</html>
+							
+
+							
+						
